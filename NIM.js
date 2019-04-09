@@ -1,4 +1,4 @@
-const aNimb = '<img src="nimb.png" alt="nimb" style="width:20px;height:20px;">';
+const aNimb = '<img src="nimb.png" alt="nimb" style="width:40px;height:40px;">';
 
 let currentGame = 0;
 

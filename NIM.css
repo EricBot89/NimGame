@@ -166,14 +166,41 @@ margin:auto;
 top:40px;
 background: grey;
 border: 2px solid black;
-width:320px;
+width:360px;
 height:240px;
 z-index: 35;
 }
 
+.gridDiv{
+border: 1px white solid;
+border-top-style:none;
+border-bottom-style:none;
+height:238px;
+width:118px;
+z-index: 36;
+position: absolute;
+overflow:hidden;
+}
+
+#gD1{
+left:1px;
+border-left-style: none;
+}
+
+#gD2{
+left:120px;
+}
+
+#gD3{
+left:240px;
+border-right-style: none;
+
+}
+
 .nimb{
 float:left;
-vertical-align:bottom;
+vertical-align: bottom;
+z-index: 38;
 }
 
 #okIntro{
