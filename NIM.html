@@ -1,0 +1,46 @@
+<!--This is HTML for a browser based NIM game -->
+
+<!DOCTYPE html>
+
+<html lang = "en">
+
+	<head>
+		<meta charset = "UTF-8">
+		<title>NIM Game</title>
+		<link rel="stylesheet" href="NIM.css">
+	</head>
+
+	<body>
+	<div id = "wrapperDiv">
+		<button id ="NIM">NIM</button>
+		<button id ="theRules">the rules</button>
+	<div id = "introScreen" class = "screenDiv">
+		<h2>This is the game of NIM:</h2>
+		<p>The game starts with a stack of nimbs. This is a nimb: <img src="nimb.png" alt="nimb" style="width:20px;height:20px;">. On each turn you'll take from one to three nimbs off the stack, then your opponent will do the same. The player who takes the last nimb is the winner.</p>
+		<p>You will need to chose how many nimbs you want to play with, and decide if you want to play with a friend or against the computer.</p>
+		<button id = "okIntro" class = "standardButton">ok</button>
+	</div>
+
+	<div id = "setupScreen" class = "screenDiv">
+		<p>How many nimbs would you like to play with?</p>
+		<h3>choose a number between 12 and 160</h3>
+		<input id="nimbNumberInput" value = "?" onfocus="this.value=''">
+		<p>Choose a game mode:</p>
+		<form action="">
+		<input type = "radio" class = "pT" name = "playerToggle" id="computer"><label for = "computer"><img src="Human.png" alt="Human" style="width:50px;height:50px;"><img src="Comp.png" alt="Computer" style="width:40px;height:40px;"></label>
+		<input type = "radio" class = "pT" name = "playerToggle" id="human"><label for = "human"><img src="Human.png" alt="Human" style="width:50px;height:50px;"><img src="Human.png" alt="Human" style="width:50px;height:50px;"></label>
+		<input type = "radio" class = "pT" name = "playerToggle" id="cpuOnly"><label for = "cpuOnly"><img src="Comp.png" alt="Computer" style="width:40px;height:40px;"><img src="Comp.png" alt="Computer" style="width:40px;height:40px;"></label>
+		</form>
+		<button id = "okSetup" class = "standardButton">ok</button>
+	</div>
+
+	<div id = "gameScreen" class = "screenDiv">
+		<div id = "output">Game Messages Go Here</div>
+		<div id = "nimStack"></div>
+		<button id = "takeButton" class = "gameButton">Take Nim!</button><button id = "doneButton" class = "gameButton">Done!</button>
+	</div>
+	</div>
+
+	<script src="NIM.js"></script>
+	</body>
+</html>

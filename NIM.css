@@ -1,0 +1,176 @@
+body{
+background: black;
+}
+
+p{
+font-size: 20px;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+#NIM{
+position:fixed;
+text-align: center;
+font-size: 96px;
+color: #1a1a1a;
+background:black;
+border:none;
+left:80px;
+width:200px;
+}
+
+#NIM:hover{
+filter: invert(15%);
+}
+
+#theRules{
+position:fixed;
+text-align: center;
+font-size: 48px;
+color: #1a1a1a;
+background:black;
+border:none;
+left:80px;
+top:120px;
+width:200px;
+}
+
+#theRules:hover{
+filter: invert(15%);
+}
+
+h2{
+text-align: center;
+font-size: 24px;
+}
+
+h3{
+font-size: 8px;
+margin-left:10%
+}
+
+#wrapperDiv{
+display:block;
+width: 80%;
+height:100%;
+margin:auto;
+margin-left:10%;
+}
+
+.screenDiv{
+display: block;
+position:absolute;
+width: 640px;
+height: 480px;
+left:25%;
+background: darkgrey;
+border: 1px solid black;
+}
+
+.standardButton{
+display: block;
+position: absolute;
+bottom: -25px;
+margin:auto;
+margin-bottom:3px;
+width: 36px;
+height: 24px;
+background: grey;
+color: lightgrey;
+border: 1px solid black;
+}
+
+.gameButton{
+display: inline-block;
+text-align:center;
+width: 64px;
+height: 32px;
+background: grey;
+color: lightgrey;
+border: 1px solid black;
+}
+
+#takeButton{
+position:absolute;
+margin-top: 45px;
+margin-left:-170px;
+
+}
+
+#doneButton{
+position:absolute;
+margin-top: 45px;
+margin-left:106px;
+}
+
+#introScreen{
+z-index:50;
+overflow:hidden;
+}
+
+#setupScreen{
+z-index:40;
+overflow:hidden;
+}
+
+#nimbNumberInput{
+display: block;
+position: relative;
+margin:auto;
+margin-top: 15px;
+width: 300px;
+height: 160px;
+font-size: 86px;
+text-align:center;
+border: 1px solid black;
+}
+
+.pT{
+display: inline-block;
+position: relative;
+margin-left:10%;
+}
+
+label{
+color: #0a0a0a;
+position: relative;
+}
+
+#gameScreen{
+z-index:30;
+overflow:hidden;
+text-align:center;
+}
+
+#output{
+font-size: 24px;
+padding-top: 25px;
+padding-bottom:25px;
+background: grey;
+border:1px solid black;
+}
+
+#nimStack{
+display:block;
+position:relative;
+margin:auto;
+top:40px;
+background: grey;
+border: 2px solid black;
+width:320px;
+height:240px;
+z-index: 35;
+}
+
+.nimb{
+float:left;
+vertical-align:bottom;
+}
+
+#okIntro{
+position:relative;
+}
+
+#okSetup{
+position:relative;
+}
