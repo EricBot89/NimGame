@@ -171,6 +171,27 @@ height:240px;
 z-index: 35;
 }
 
+#counterBox{
+width:100;
+height:100;
+background:black;
+position: fixed;
+right: 80px;
+top: 25px;
+color:black;
+text-align: center;
+}
+
+#nimbCounter{
+width: 30px;
+height: 30px;
+display: block;
+margin: auto;
+background: black;
+color: white;
+font-size: 30px;
+}
+
 .gridDiv{
 border: 1px white solid;
 border-top-style:none;

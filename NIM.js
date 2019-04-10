@@ -77,6 +77,8 @@ class NimGame {
     document.getElementById("nimStack").appendChild(gD1);
     document.getElementById("nimStack").appendChild(gD2);
     document.getElementById("nimStack").appendChild(gD3);
+    document.getElementById("nimbCounter").innerHTML = this.nimbs;
+    document.getElementById("counterBox").style.color = "white";
     for (let i = 0; i < this.nimbs; i++) {
       let newNimb = document.createElement("div");
       newNimb.id = "n" + i;
@@ -95,6 +97,7 @@ class NimGame {
       fade(document.getElementById("n" + String(this.nimbs - 1)));
       this.nimbs--;
       this.takenThisTurn++;
+      document.getElementById("nimbCounter").innerHTML = this.nimbs;
       if (this.nimbs == 0) {
         setMessage("Player " + (this.turn + 1) + " Wins!");
         this.status = "won";
@@ -209,6 +212,8 @@ function terminateGame() {
       .getElementById("nimStack")
       .removeChild(document.getElementById("nimStack").firstChild);
   }
+  document.getElementById("counterBox").style.color = "black";
+  document.getElementById("nimbCounter").innerHTML = "";
 }
 
 function flashButton(button) {
