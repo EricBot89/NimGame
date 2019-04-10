@@ -16,7 +16,8 @@
 		<button id ="theRules">the rules</button>
 	<div id = "introScreen" class = "screenDiv">
 		<h2>This is the game of NIM:</h2>
-		<p>The game starts with a stack of nimbs. This is a nimb: <img src="nimb.png" alt="nimb" style="width:20px;height:20px;">. On each turn you'll take from one to three nimbs off the stack, then your opponent will do the same. The player who takes the last nimb is the winner.</p>
+		<p>The game starts with a stack of nimbs. This is a nimb: <img src="nimb.png" alt="nimb" style="width:20px;height:20px;">. On each turn you'll take one to three nimbs off the stack, then your opponent will do the same. The player who takes the last nimb off the stack is the winner.</p>
+		<br>
 		<p>You will need to chose how many nimbs you want to play with, and decide if you want to play with a friend or against the computer.</p>
 		<button id = "okIntro" class = "standardButton">ok</button>
 	</div>
@@ -24,7 +25,7 @@
 	<div id = "setupScreen" class = "screenDiv">
 		<p>How many nimbs would you like to play with?</p>
 		<h3>choose a number between 12 and 160</h3>
-		<input id="nimbNumberInput" value = "?" onfocus="this.value=''">
+		<input id="nimbNumberInput" value = "12" onfocus="this.value=''">
 		<p>Choose a game mode:</p>
 		<form action="">
 		<input type = "radio" class = "pT" name = "playerToggle" id="computer"><label for = "computer"><img src="Human.png" alt="Human" style="width:50px;height:50px;"><img src="Comp.png" alt="Computer" style="width:40px;height:40px;"></label>

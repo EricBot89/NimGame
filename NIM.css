@@ -23,6 +23,11 @@ width:200px;
 filter: invert(15%);
 }
 
+
+#NIM:focus{
+border: none;
+}
+
 #theRules{
 position:fixed;
 text-align: center;
@@ -37,6 +42,10 @@ width:200px;
 
 #theRules:hover{
 filter: invert(15%);
+}
+
+#theRules:focus{
+border:none;
 }
 
 h2{

@@ -92,6 +92,8 @@ class NimGame {
     } else {
       setMessage("You can't take more than three nimbs!");
       flashButton(document.getElementById("theRules"));
+      setTimeout(() => {currentGame.resetMessage()},800);
+
     }
   }
 
@@ -99,6 +101,7 @@ class NimGame {
     if (this.takenThisTurn == 0) {
       setMessage("You must take at least one nimb!");
       flashButton(document.getElementById("theRules"));
+      setTimeout(() => {currentGame.resetMessage()},800);
     } else {
       this.turn = (this.turn + 1) % 2;
       this.resetMessage();
