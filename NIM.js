@@ -10,7 +10,7 @@ document.getElementById("okIntro").onclick = function() {
 
 document.getElementById("okSetup").onclick = function() {
   let nimbCount = document.getElementById("nimbNumberInput").value;
-  if (Number(nimbCount) && Number(nimbCount) > 11 && Number(nimbCount) < 161) {
+  if (Number(nimbCount) && Number(nimbCount) > 11 && Number(nimbCount) < 46) {
     if (document.getElementById("computer").checked) {
       currentGame = new NimGame(nimbCount, "Human", "Computer");
       currentGame.resetMessage();
@@ -65,6 +65,18 @@ class NimGame {
     this.player1 = player2;
     this.takenThisTurn = 0;
     this.status = "playing";
+    let gD1 = document.createElement("div");
+    let gD2 = document.createElement("div");
+    let gD3 = document.createElement("div");
+    gD1.id = "gD1";
+    gD2.id = "gD2";
+    gD3.id = "gD3";
+    gD1.className = "gridDiv";
+    gD2.className = "gridDiv";
+    gD3.className = "gridDiv";
+    document.getElementById("nimStack").appendChild(gD1);
+    document.getElementById("nimStack").appendChild(gD2);
+    document.getElementById("nimStack").appendChild(gD3);
     for (let i = 0; i < this.nimbs; i++) {
       let newNimb = document.createElement("div");
       newNimb.id = "n" + i;
